@@ -1,0 +1,42 @@
+<div class="mainSection">
+  <div class="section1">
+    <div class="container">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  #searchTerm>
+        <button class="btn btn-primary  my-2 my-sm-0" type="submit" (click)="searchUser(searchTerm.value)">Search</button>
+      </form>
+      <button class="btn btn-primary  mr-sm-2" type="submit" (click)="sortUser5()">Sort By Date</button>
+      <button class="btn btn-primary  mr-sm-2" type="submit" (click)="createMatch()">Create Random Match</button>
+
+    </div>
+    <div class="table1">
+      <table class="table"  >
+        <thead >
+        <tr>
+          <th scope="col">Team One Name</th>
+          <th scope="col">Team Two Name</th>
+          <th scope="col">Team One Goals</th>
+          <th scope="col">Team Two Goals</th>
+          <th scope="col">Match Date</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of matchArray " class="table-row">
+          <td>{{ item.teamOne.nameOfClub}}</td>
+          <td>{{ item.teamTwo.nameOfClub }}</td>
+          <td>{{ item.scoreTeamOne}}</td>
+          <td>{{ item.scoreTeamTwo}}</td>
+          <td>{{item.dates.day}}/{{item.dates.month}}/{{item.dates.year}}</td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+

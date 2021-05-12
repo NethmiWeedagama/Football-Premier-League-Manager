@@ -1,0 +1,43 @@
+<div class="mainSection">
+  <div class="section1">
+    <div class="container">
+      <button type="button" class="btn btn-primary" (click)="sortUser()">sort by points</button>
+      <button type="button" class="btn btn-primary" (click)="sortUser1()">sort by wins</button>
+      <button type="button" class="btn btn-primary" (click)="sortUser2()">sort by goals scored</button>
+
+    </div>
+    <div class="table1">
+      <table class="table" >
+        <thead >
+        <tr>
+          <th scope="col">Football club Name</th>
+          <th scope="col">Football club Location</th>
+          <th scope="col">Wins</th>
+          <th scope="col">Draws</th>
+          <th scope="col">Defeats</th>
+          <th scope="col">Goals Received</th>
+          <th scope="col">Goals Scored</th>
+          <th scope="col">Points</th>
+          <th scope="col">Matches Played</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor ="let content of clubArray"  class="table-row">
+          <td>{{content.nameOfClub}}</td>
+          <td>{{content.locationOfTheClub}}</td>
+          <td>{{content.numOfWins}}</td>
+          <td>{{content.numOfDraws}}</td>
+          <td>{{content.numOfDefeats}}</td>
+          <td>{{content.numOfGoalsReceived}}</td>
+          <td>{{content.numOfGoalsScored}}</td>
+          <td>{{content.numOfPoints}}</td>
+          <td>{{content.numOfMatchesPlayed}}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Serve index page from public directory
+GET     /                           controllers.FrontendController.index()
+
+GET     /api/getFootBallClubs        controllers.HomeController.getFootBallClubs
+
+GET     /api/getMatches             controllers.HomeController.getMatches
+
+GET     /api/getSortByPoints        controllers.HomeController.getSortByPoints
+
+GET    /api/getSortByWins           controllers.HomeController.getSortByWins
+
+GET    /api/getSortByGoals          controllers.HomeController.getSortByGoals
+
+GET    /api/getMatchSortByDate      controllers.HomeController.getMatchSortByDate
+
+GET    /api/getsearchMatches        controllers.HomeController.getsearchMatches(filterDate: String)
+
+GET    /api/getRandomMatchPlayed    controllers.HomeController.getRandomMatchPlayed

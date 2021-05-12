@@ -1,0 +1,86 @@
+
+.btn{
+  color: darkblue;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: lightskyblue;
+  border-radius: 1em;
+}
+
+
+.container{
+
+  margin: 0 auto;
+  font-size: 14px;
+  width: 800px;
+  padding:20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin-top: 60px;
+  margin-right: auto;
+
+  margin-left: auto;
+}
+
+.table td, .table th {
+
+  padding: 9px;
+}
+
+.table tr{
+  background-color: lightskyblue;
+}
+tbody {
+  display:block;
+  height:200px;
+  overflow:auto;
+}
+thead, tbody tr {
+  display:table;
+  width:100%;
+  table-layout:fixed;
+}
+thead {
+  width: calc( 100% - 1em )
+}
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: darkblue;
+  color: white;
+}
+
+.section1{
+  font-family: sans-serif;
+  width: 82%;
+  margin: auto;
+  color: #000;
+  font-size: 16px;
+  line-height: 2em;
+  padding: 0 0 1em 0;
+  text-align: justify;
+  background-color:rgba(0, 0, 0, 0.8);
+  background-size: 100%;
+  height: 75vh;
+
+
+}
+.mainSection
+{
+  background : url('../../../src/assets/images (1).JPEG')no-repeat ;
+  background-size: 100% 100%;
+  height: 90vh;
+  scroll-behavior: smooth;
+
+}
